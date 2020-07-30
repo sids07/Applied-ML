@@ -46,7 +46,7 @@ if __name__ =="__main__":
         'max_features':hp.uniform('max_features',0.01,1), 
 
     }
-
+#quniform == int, choice = if we have value on list, uniform= float
     optimization_function = partial(optimize,x=X,y=y)
     trials =Trials()
     result = fmin(
